@@ -39,13 +39,13 @@ public class BackendApplication {
         return args->{
 
             Authority authority1 = authorityService.add(new Authority(null,"ROLE_ADMIN",null));
-            Authority authority2 = authorityService.add(new Authority(null,"ROLE_USER",null));
+            Authority authority2 = authorityService.add(new Authority(null,"ROLE_PRODUCTOR",null));
             Authority authority3 = authorityService.add(new Authority(null,"ROLE_ASSIST",null));
 
 
 
-            userService.add(new DTOUser(null,"gmorip","pass","ROLE_ADMIN;ROLE_USER"));
-            userService.add(new DTOUser(null,"qwerty","pass","ROLE_USER"));
+            userService.add(new DTOUser(null,"gmorip","pass","ROLE_ADMIN;ROLE_PRODUCTOR"));
+            userService.add(new DTOUser(null,"qwerty","pass","ROLE_PRODUCTOR"));
             userService.add(new DTOUser(null,"asdfg","pass","ROLE_ASSIST"));
 
 
